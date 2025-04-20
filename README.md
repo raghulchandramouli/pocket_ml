@@ -36,7 +36,7 @@ predictions = model.predict(new_data)
 
 ## Documentation
 
-For detailed documentation and examples, visit our [documentation page](https://pocket_ml.readthedocs.io).
+For detailed documentation and examples, visit our [documentation page](https://pypi.org/project/pocket-ml/0.1.1/).
 
 ## Contributing
 
