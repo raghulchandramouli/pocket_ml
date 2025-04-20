@@ -1,4 +1,4 @@
-# Pocket ML
+# pocket_ml
 
 A lightweight and user-friendly machine learning library designed to simplify ML workflows.
 
