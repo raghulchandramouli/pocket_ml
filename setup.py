@@ -39,5 +39,6 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules"
     ],
     keywords="machine learning, data science, classification, visualization",
-    python_requires='>=3.7'
+    python_requires='>=3.7',
+    license="MIT",
 )
