@@ -19,8 +19,7 @@ pip install pocket_ml
 ## Quick Start
 
 ```python
-from pocket_ml.model import Classifier
-from pocket_ml.preprocessing import DataPreprocessor
+from pocket_ml import Classifier, DataPreprocessor, Visualizer
 
 # Prepare your data
 preprocessor = DataPreprocessor()
@@ -32,6 +31,21 @@ model.fit(X_processed, y)
 
 # Make predictions
 predictions = model.predict(new_data)
+
+# Visualize results
+visualizer = Visualizer()
+visualizer.plot_confusion_matrix(y, predictions)
+```
+
+## Package Structure
+
+```
+pocket_ml/
+  ├── algorithms/       # ML algorithms implementation
+  │   ├── classification/
+  │   └── regression/
+  ├── preprocessing/    # Data preprocessing utilities
+  └── visualization/    # Data visualization tools
 ```
 
 ## Documentation
