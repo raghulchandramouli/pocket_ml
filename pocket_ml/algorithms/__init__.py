@@ -3,6 +3,6 @@
 This module provides various machine learning algorithms.
 """
 
-from .classification.classifier import Classifier
+from .classification import Classifier
 
 __all__ = ['Classifier']

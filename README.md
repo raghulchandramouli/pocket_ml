@@ -83,7 +83,7 @@ pocket_ml/
 
 ## Documentation
 
-For detailed documentation and examples, visit our [documentation page](https://pypi.org/project/pocket-ml/). (Note: The provided link points to version 0.1.1, ensure documentation matches the installed version).
+For detailed documentation and examples, visit our [documentation page](https://pypi.org/project/pocket-ml/). (Note: The provided link points to version 0.1.2, ensure documentation matches the installed version).
 
 ## Contributing
 
