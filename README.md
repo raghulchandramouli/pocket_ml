@@ -14,7 +14,7 @@ A lightweight and user-friendly machine learning library designed to simplify ML
 - [Contributing](#contributing)
 - [License](#license)
 
-## Features
+## Feature
 
 pocket_ml offers a range of features to streamline your machine learning projects:
 
