@@ -14,7 +14,7 @@ setup(
         'scikit-learn>=0.24.0',
         'matplotlib>=3.3.0',
         'seaborn>=0.11.0',
-       'numba>=0.53.0',
+        'numba>=0.53.0',
     ],
     
     long_description=description,
