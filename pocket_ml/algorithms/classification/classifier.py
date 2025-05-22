@@ -1,9 +1,16 @@
+from numba import jit
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 
 class Classifier:
+    
+    @jit(nopython=True)
+    def _postprocess(self, predictions):
+        # Numba-accelerated post-processing
+        return np.stack([1/(1 + np.exp(-x)) for x in predictions])
+    
     """A unified interface for different classification algorithms.
     
     Parameters
