@@ -1,7 +1,25 @@
+from numba import njit
 import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.impute import SimpleImputer
 
+
+# GPU Accelerated Functions
+@njit
+def _gpu_scale_features(X):
+    """Scale the features of the input data.
+
+    Parameters
+    ----------
+    X : array-like
+        Input data
+
+    Returns
+    -------
+    array-like
+        Scaled data
+    """
+    return (X - X.mean(axis=0)) / X.std(axis=0)
 class DataPreprocessor:
     """A unified interface for data preprocessing tasks.
     
@@ -53,6 +71,9 @@ class DataPreprocessor:
         array-like
             Transformed data
         """
+        def transform(self, X):
+            if self.scaling:
+                X = _gpu_scale_features(np.asarray(X))
         X_transformed = X.copy()
         
         if self.imputation:
